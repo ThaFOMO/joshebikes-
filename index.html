@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josh's Ebike & Urbex</title>
+  <style>
+    /* Reset & basics */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+    a {
+      color: #1DB954;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: #181818;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1DB954;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      color: #1DB954;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: #1E1E1E;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #1DB954AA;
+    }
+    h2 {
+      color: #1DB954;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    .bike-img {
+      max-width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 0 12px #1DB954;
+      margin-bottom: 1rem;
+    }
+    .recommended-bikes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 1.5rem;
+    }
+    .bike-card {
+      background: #222;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 8px #1DB95488;
+      transition: transform 0.2s ease;
+    }
+    .bike-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #1DB954cc;
+    }
+    .bike-card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+    iframe {
+      border-radius: 8px;
+      box-shadow: 0 0 12px #1DB954cc;
+      width: 100%;
+      height: 315px;
+    }
+    .discord-btn {
+      display: inline-block;
+      background: #7289DA;
+      color: white;
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-align: center;
+      margin-top: 1rem;
+      box-shadow: 0 0 15px #7289DAaa;
+      transition: background-color 0.3s ease;
+    }
+    .discord-btn:hover {
+      background: #5b6eae;
+      box-shadow: 0 0 20px #5b6eaecc;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background: #181818;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      user-select: none;
+    }
+    @media(max-width: 600px) {
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Josh's Ebike & Urbex</h1>
+    <nav>
+      <a href="#about-bike">About Bike</a>
+      <a href="#recommended">Recommended Bikes</a>
+      <a href="#urbex">Urbex Adventures</a>
+      <a href="#youtube">YouTube</a>
+      <a href="#discord">Discord</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about-bike">
+      <h2>About Josh's Bike - TUTTIO Soleil 01</h2>
+      <img src="https://i.imgur.com/M9KyI5P.jpg" alt="TUTTIO Soleil 01 eBike" class="bike-img" />
+      <p>Josh recently got this awesome <strong>TUTTIO Soleil 01</strong> eBike 🚴‍♂️⚡️ — a sleek, powerful ride perfect for urban exploration and daily adventures. He’s gearing up to record epic rides with a GoPro soon 🎥📸, so stay tuned for some amazing videos!</p>
+    </section>
+
+    <section id="recommended">
+      <h2>Recommended Ebikes</h2>
+      <div class="recommended-bikes">
+        <div class="bike-card">
+          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="Rad Power Bikes RadRover 5" />
+          <h3>Rad Power Bikes RadRover 5</h3>
+          <p>A rugged fat-tire eBike great for all terrains and adventure seekers.</p>
+        </div>
+        <div class="bike-card">
+          <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=400&q=80" alt="Specialized Turbo Vado SL" />
+          <h3>Specialized Turbo Vado SL</h3>
+          <p>Lightweight and fast, perfect for city rides and commuting.</p>
+        </div>
+        <div class="bike-card">
+          <img src="https://images.unsplash.com/photo-1508168992046-cd4ee9aa1c33?auto=format&fit=crop&w=400&q=80" alt="Trek Super Commuter+" />
+          <h3>Trek Super Commuter+</h3>
+          <p>High-performance eBike with great battery life for long rides.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="urbex">
+      <h2>Urbex Adventures with Josh</h2>
+      <p>Besides eBikes, Josh is passionate about urban exploration — discovering abandoned places and hidden gems 🏚️🧭. Follow his journeys for unique content that blends adventure and technology.</p>
+      <img src="https://i.imgur.com/yUQc6Yq.jpg" alt="Urban Exploration" class="bike-img" />
+    </section>
+
+    <section id="youtube">
+      <h2>Josh’s YouTube Channel</h2>
+      <p>Catch all the latest rides, mods, and urbex videos on Josh's YouTube! Subscribe and join the journey. 🚴‍♂️🎥</p>
+      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=joshstuttio" allowfullscreen title="Josh's YouTube"></iframe>
+    </section>
+
+    <section id="discord">
+      <h2>Join the Discord Community</h2>
+      <p>Connect with Josh, ask questions, share your rides, and be part of the crew! 🚀</p>
+      <a href="https://discord.gg/YZkGFEeAFy" target="_blank" rel="noopener" class="discord-btn">Join Discord</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Josh's Ebike & Urbex | Built by Clickey🚴‍♂️
+    
+  </footer>
+</body>
+</html>
